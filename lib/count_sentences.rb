@@ -21,6 +21,8 @@ class String
     # Next we reject any sentence that is empty
 
     non_empty_sents = multiple_sents.reject {|sentence| sentence == ""}
+    
+    
     count = non_empty_sents.length
     
   end
