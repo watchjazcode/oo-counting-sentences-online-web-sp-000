@@ -16,6 +16,6 @@ class String
   end
 
   def count_sentences
-    self
+    selfmultiple_sents = self.split(/[\.\!\?]/)
   end
 end
