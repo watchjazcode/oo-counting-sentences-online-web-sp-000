@@ -16,6 +16,7 @@ class String
   end
 
   def count_sentences
+    
     multiple_sents = self.split(/[\.\!\?]/)
     non_empty_sents = multiple_sents.reject {|sentence| sentence == ""}
     count = non_empty_sents.length
