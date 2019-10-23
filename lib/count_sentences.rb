@@ -19,11 +19,12 @@ class String
     # Split the string into multiple sentences based on punctuation
     multiple_sents = self.split(/[\.\!\?]/)
     # Next we reject any sentence that is empty
-
     non_empty_sents = multiple_sents.reject {|sentence| sentence == ""}
-    
-    
+    # Now non_empty_sents only has real sentences, with no empty strings
+    # These are the ones we want to count.
     count = non_empty_sents.length
-    
+    return count
   end
 end
+
+
