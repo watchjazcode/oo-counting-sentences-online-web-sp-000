@@ -1,5 +1,6 @@
 require 'pry'
-
+#self is a place marker for any String
+#end_with? is a built in method that checks what the sentence ends with.
 class String
 
   def sentence?
@@ -15,6 +16,6 @@ class String
   end
 
   def count_sentences
-
+    self.coun
   end
 end
